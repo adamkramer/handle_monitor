@@ -256,7 +256,6 @@ BOOL GetFileNameFromHandle(HANDLE hFile, WCHAR* fName)
 		CloseHandle(hFileMap);
 	}
 	else {
-		DWORD a = GetLastError();
 		CloseHandle(hFileMap);
 		return bSuccess;
 	}
@@ -269,7 +268,7 @@ int wmain(int argc, WCHAR *argv[])
 {
 
 	/* Display welcome message */
-	printf("cryptoransomware_detect %s - Adam Kramer\n", VERSION_NUMBER);
+	printf("handle_monitor %s - Adam Kramer\n", VERSION_NUMBER);
 
 	/* These variables hold configuration options, which can be altered by arguments passed */
 	BOOL bIncludeSigned = FALSE;
