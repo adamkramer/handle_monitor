@@ -14,7 +14,7 @@ Optional parameters:
 /verbose - Display verbose progress messages
 
 How it works:
-1. Indexs all file handles from all running processes
+1. Index all file handles from all running processes
 2. Pauses for /pause=X amount of time
 3. Checks again, adding new handles to the index, and keeping a tally
 4. After /cycles=X iterations, perform an analysis
