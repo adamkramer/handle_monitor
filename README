@@ -1,0 +1,24 @@
+handle_monitor
+
+Detects abnormal number of handle creations in an attempt to identify crypto ransomware encryption, or destructive malware in action
+
+Usage:
+handle_monitor.exe <optional arguments>
+
+Optional parameters:
+/cycles=X - Set number of cycles before a review [Default: 10]
+/threshold=X - Set suspicion threshold for number of new handles [Default: 10]
+/pause=X - Set pause in milliseconds between cycles [Default: 1000]
+/signed - Include signed executables in review process
+/suspend - Suspend processes identified as suspicious
+/verbose - Display verbose progress messages
+
+How it works:
+1. Indexs all file handles from all running processes
+2. Pauses for /pause=X amount of time
+3. Checks again, adding new handles to the index, and keeping a tally
+4. After /cycles=X iterations, perform an analysis
+5. Analysis checks whether any processes have created /threshold=X or more new handles
+6. If so, will either raise an alert, or /suspend the process (if required)
+
+By default, it only looks for unsigned executables (to reduce noise), but signed can be included with /signed
