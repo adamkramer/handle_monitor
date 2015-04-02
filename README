@@ -22,3 +22,8 @@ How it works:
 6. If so, will either raise an alert, or /suspend the process (if required)
 
 By default, it only looks for unsigned executables (to reduce noise), but signed can be included with /signed
+
+SANS blog on subject: http://blogs.sans.org/computer-forensics/2015/03/31/identifying-and-disrupting-crypto-ransomware-and-destructive-malware
+YouTube demo: https://www.youtube.com/watch?v=evYscmVq9P8
+
+Follow me on Twitter: @CyberKramer
