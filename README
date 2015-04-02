@@ -26,4 +26,7 @@ By default, it only looks for unsigned executables (to reduce noise), but signed
 SANS blog on subject: http://blogs.sans.org/computer-forensics/2015/03/31/identifying-and-disrupting-crypto-ransomware-and-destructive-malware
 YouTube demo: https://www.youtube.com/watch?v=evYscmVq9P8
 
+If you get an error about msvcr120.dll being missing, install the microsoft runtime libraries: 
+http://www.microsoft.com/en-gb/download/details.aspx?id=40784
+
 Follow me on Twitter: @CyberKramer
