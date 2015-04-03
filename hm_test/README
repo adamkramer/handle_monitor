@@ -2,10 +2,10 @@ Usage: hm_test.exe <path to directory> <command> <argument>
 
 Commands include:
 create - create a number of files in the specified directory
-Example: hm_test.exe c:\\directory create <number of files>
+Example: hm_test.exe c:\directory create <number of files>
 
 encrypt - simulate encryption (overwrite a file with something different)
-Example: hm_test.exe c:\\directory encrypt <number of files>
+Example: hm_test.exe c:\directory encrypt <number of files>
 
 Each file will be 1 megabyte in size. 
 
